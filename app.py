@@ -8,6 +8,10 @@ from PySide6.QtGui import QIcon
 import json
 from password_generator import PasswordGenerator
 
+# Load Requirements
+with open('requirements.txt') as f:
+    requirements = f.readlines()
+
 # Creating the class for the main window
 class Window(QMainWindow):
     def __init__(self):
